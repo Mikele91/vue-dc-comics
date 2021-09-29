@@ -1,8 +1,11 @@
 <template>
-    <div>
-        <h2>Sono il Contentstop</h2>
+    <section>
+        <div class="container">
+            <h2>Sono il Contentstop</h2>
 
-    </div>
+        </div>
+
+    </section>
     
 </template>
 

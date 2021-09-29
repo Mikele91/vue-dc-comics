@@ -1,8 +1,11 @@
 <template>
-    <div>
-        <h2>Sono il ContentsBottom</h2>
+    <section>
+        <div class="container">
 
-    </div>
+        <h2>Sono il ContentsBottom</h2>
+        </div>
+
+    </section>
 </template>
 
 <script>

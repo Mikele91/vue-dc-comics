@@ -1,8 +1,11 @@
 <template>
-   <div>
-    <h2>Sono il Footer</h2>
+   <footer>
+      <div class="container">
 
-   </div>
+         <h2>Sono il Footer</h2>
+      </div>
+
+   </footer>
 </template>
 
 <script>
