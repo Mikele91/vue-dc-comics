@@ -79,7 +79,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import"src/assets/style/variables.scss";
+@import"../assets/style/variables.scss";
 header{
     margin: 1.25rem 0;
 }

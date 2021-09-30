@@ -1,22 +1,26 @@
 <template>
-  <div class="container">
+<div class="container">
             <div class="card">
                 <img :src= prod.thumb alt="" class="card-img">
                 <div class="card-text">{{prod.series}}</div>
             </div>
+</div>
+
 </template>
 
 <script>
 export default {
     name:"Card",
-    props:["prod"]
+    props:['prod']
 
     }
 
 </script>
 
 <style lang="scss" scoped>
-
+.container{
+    display: flex;
+    flex-wrap: wrap;
     .card{
         width: calc(( 100% / 6 ) - 10px);
         margin :0 5px;
@@ -25,6 +29,8 @@ export default {
             text-align: center;
         }
     }
+}
+
 
 
 </style>
