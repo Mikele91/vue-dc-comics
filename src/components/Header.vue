@@ -69,8 +69,8 @@ export default {
                     text:"Shop",
                     url:"#",
                     current: false,
-                }
-            ]
+                },
+            ],
         }
     }
 
