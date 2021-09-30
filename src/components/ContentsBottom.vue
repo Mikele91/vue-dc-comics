@@ -63,11 +63,11 @@ section{
     .container{
         align-items: center;
         display: flex;
-   nav{
-       width: 100%;
-   }
+    nav{
+        width: 100%;
+    }
     nav ul {
-       width: 100%;
+        width: 100%;
         display: flex;
         justify-content: space-between;
 
@@ -90,13 +90,9 @@ section{
                 padding: 0 .625rem;
                 color: white;
             }
-            // &.active{
-            //  color: red ;
-            //  border-bottom: 2px solid $colorDc;
-            // }
         }
     }
     }
- }
+}
 
 </style>

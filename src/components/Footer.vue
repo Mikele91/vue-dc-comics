@@ -59,8 +59,9 @@
                </div>
 
             </div>
-            
-         <img src="@/assets/img/dc-logo-bg.png" alt="">
+            <div class="img-dc">
+            <!-- <img src="@/assets/img/dc-logo-bg.png" alt=""> -->
+            </div>
          </div>
          <div class="bottom-footer">
 
@@ -73,6 +74,7 @@
 
 <script>
 export default {
+    name:"Footer",
 
 }
 </script>
@@ -84,12 +86,11 @@ export default {
       background-image: url("../assets/img/footer-bg.jpg") ;
       background-size: cover;
       background-position: top;
-      min-height: 20rem;
       .top-footer{
+         min-height: 25rem;
          display: flex;
          justify-content: space-between;
-      }
-      .list{
+         .list{
                display: flex;
                color: white;
             .col-list{
@@ -105,5 +106,13 @@ export default {
             }
          }
       }
+         .img-dc{
+         background-image: url("../assets/img/dc-logo-bg.png");
+         width: 50%;
+         background-size: cover;
+         background-position:center ;
+      }
+      }
+      
    }
 </style>
