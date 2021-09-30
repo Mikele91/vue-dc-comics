@@ -1,11 +1,8 @@
 <template>
-<div class="container">
             <div class="card">
                 <img :src= prod.thumb alt="" class="card-img">
                 <div class="card-text">{{prod.series}}</div>
             </div>
-</div>
-
 </template>
 
 <script>
@@ -18,18 +15,16 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.container{
-    display: flex;
-    flex-wrap: wrap;
-    .card{
-        width: calc(( 100% / 6 ) - 10px);
-        margin :0 5px;
-        padding: 5px;
+
+.card{
+        width: calc(( 100% / 6 ) - .625rem);
+        margin :0 .3125rem;
+        padding: .3125rem;
         &-text{
             text-align: center;
         }
     }
-}
+
 
 
 

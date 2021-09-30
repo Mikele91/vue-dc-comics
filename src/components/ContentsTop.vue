@@ -1,12 +1,18 @@
 <template>
     <section>
         <div class="container">
-            <Card v-for = "(film, index) in list" :key= "index" :prod="film"/>
-            <!-- <div class="card" v-for = "(film, index) in list" :key= "index">
-                <img :src= film.thumb alt="" class="card-img">
-                <div class="card-text">{{film.series}}</div>
-            </div> -->
+            <button class="btn-top">Cuerrent Series</button>
+            <div class="container-card">
+                <Card v-for = "(film, index) in list" :key= "index" :prod="film"/>
+                <!-- <div class="card" v-for = "(film, index) in list" :key= "index">
+                    <img :src= film.thumb alt="" class="card-img">
+                    <div class="card-text">{{film.series}}</div>
+                </div> -->
+                <button class="btn-bottom">Load More</button>
+
+            </div>
         </div>
+
 
     </section>
     
@@ -101,22 +107,39 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import"../assets/style/variables.scss";
+
 section{
     background-color:#1c1c1c;
     padding: 30px;
     color: white;
+    .container{
+        padding: 3.75rem 0;
+        position: relative;
+        button{
+            color: white;
+            background-color:$colorDc;
+            padding: .5rem;
+        }
+        .btn-top{
+            position: absolute;
+            top: -30px; /* Position Y halfway in */
+            left: 90px; /* Position X halfway in */
+            transform: translate(-50%,-50%); /* Move it halfway back(x,y) */
+            font-size: 1.25rem;
+
+        }
+        .btn-bottom{
+            position: absolute;
+            top: 100%; /* Position Y halfway in */
+            left: 50%; /* Position X halfway in */
+            transform: translate(-50%,-50%); /* Move it halfway back(x,y) */
+        }
+    }
 }
-.container{
+.container-card{
     display: flex;
     flex-wrap: wrap;
-    // .card{
-    //     width: calc(( 100% / 6 ) - 10px);
-    //     margin :0 5px;
-    //     padding: 5px;
-    //     &-text{
-    //         text-align: center;
-    //     }
-    // }
 }
 
 </style>

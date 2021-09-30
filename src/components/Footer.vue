@@ -60,7 +60,6 @@
 
             </div>
             <div class="img-dc">
-            <!-- <img src="@/assets/img/dc-logo-bg.png" alt=""> -->
             </div>
          </div>
          <div class="bottom-footer">
